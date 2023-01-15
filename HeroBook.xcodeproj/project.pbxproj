@@ -11,6 +11,7 @@
 		5C39CED52973A1C000A19F2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C39CED42973A1C000A19F2C /* ContentView.swift */; };
 		5C39CED72973A1C100A19F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C39CED62973A1C100A19F2C /* Assets.xcassets */; };
 		5C39CEDA2973A1C100A19F2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C39CED92973A1C100A19F2C /* Preview Assets.xcassets */; };
+		5C3F660F2973B791003FB01B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3F660E2973B791003FB01B /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3F660F2973B791003FB01B /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HeroBook;
+			packageProductDependencies = (
+				5C3F660E2973B791003FB01B /* ComposableArchitecture */,
+			);
 			productName = HeroBook;
 			productReference = 5C39CECF2973A1C000A19F2C /* HeroBook.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 5C39CEC62973A1C000A19F2C;
+			packageReferences = (
+				5C3F660D2973B791003FB01B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 5C39CED02973A1C000A19F2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C3F660D2973B791003FB01B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C3F660E2973B791003FB01B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C3F660D2973B791003FB01B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C39CEC72973A1C000A19F2C /* Project object */;
 }
