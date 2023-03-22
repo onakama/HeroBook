@@ -22,6 +22,7 @@
 		5C3F662C29783C31003FB01B /* CharecterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F662B29783C31003FB01B /* CharecterResponse.swift */; };
 		5C3F662E297841D4003FB01B /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F662D297841D4003FB01B /* Parameter.swift */; };
 		5C3F6631297983F9003FB01B /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F6630297983F9003FB01B /* CharacterRepository.swift */; };
+		9CC652A929CAE08700FBA70D /* HeroList in Resources */ = {isa = PBXBuildFile; fileRef = 9CC652A829CAE08700FBA70D /* HeroList */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5C3F662B29783C31003FB01B /* CharecterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharecterResponse.swift; sourceTree = "<group>"; };
 		5C3F662D297841D4003FB01B /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		5C3F6630297983F9003FB01B /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		9CC652A829CAE08700FBA70D /* HeroList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HeroList; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				5C3F66102973C14E003FB01B /* Extension */,
 				5C39CED22973A1C000A19F2C /* HeroBookApp.swift */,
 				5C39CED42973A1C000A19F2C /* ContentView.swift */,
+				9CC652A529CADF7D00FBA70D /* Presentation */,
 				5C3F66162973C2D0003FB01B /* Repository */,
 				5C39CED62973A1C100A19F2C /* Assets.xcassets */,
 				5C39CED82973A1C100A19F2C /* Preview Content */,
@@ -151,6 +154,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		9CC652A529CADF7D00FBA70D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9CC652A829CAE08700FBA70D /* HeroList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +229,7 @@
 			files = (
 				5C39CEDA2973A1C100A19F2C /* Preview Assets.xcassets in Resources */,
 				5C39CED72973A1C100A19F2C /* Assets.xcassets in Resources */,
+				9CC652A929CAE08700FBA70D /* HeroList in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
