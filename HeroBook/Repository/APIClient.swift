@@ -29,7 +29,6 @@ enum APIClient {
                     guard let response = try? decoder.decode(T.Response.self, from: data) else {
                         fatalError("decode error")
                     }
-                    print(response)
 
                     return response
                 case 400... :
