@@ -7,7 +7,8 @@
 
 import Foundation
 public enum CharacterRepository {
-    static func fetchCharacter() async -> CharecterResponse {
-        try! await CharacterRequest().execute()
+    static func fetch() async -> [CharecterResponse] {
+        let response = try! await CharacterRequest().execute()
+        return response.data.results
     }
 }

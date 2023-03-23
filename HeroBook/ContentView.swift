@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             Button(action: {
                 Task {
-                    print(await CharacterRepository.fetchCharacter())
+                    print(await CharacterRepository.fetch())
                 }
             }, label: {
                 VStack {

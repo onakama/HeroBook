@@ -13,7 +13,7 @@ struct HeroListView: View {
 
     var body: some View {
         WithViewStore(store) { _ in
-
+            Text("heroName")
         }
     }
 }

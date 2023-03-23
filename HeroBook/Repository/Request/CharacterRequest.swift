@@ -9,7 +9,7 @@ import Foundation
 
 struct CharacterRequest: Request {
     typealias Parameters = BaseParameter
-    typealias Response = CharecterResponse
+    typealias Response = BaseResponse<CharecterResponse>
     
     let parameters: BaseParameter = BaseParameter()
     let endpoint: Endpoint = .character

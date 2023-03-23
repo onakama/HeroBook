@@ -26,11 +26,12 @@ enum APIClient {
             switch httpStatus.statusCode {
                 case 200 ..< 400:
                     let decoder = JSONDecoder()
-                guard let response = try? decoder.decode(T.Response.self, from: data) else {
-                    fatalError("decode error")
-                }
+                    guard let response = try? decoder.decode(T.Response.self, from: data) else {
+                        fatalError("decode error")
+                    }
+                    print(response)
 
-                return response
+                    return response
                 case 400... :
                     fatalError("sever error")
                 default:

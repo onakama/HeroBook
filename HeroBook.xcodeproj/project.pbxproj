@@ -22,6 +22,7 @@
 		5C3F662C29783C31003FB01B /* CharecterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F662B29783C31003FB01B /* CharecterResponse.swift */; };
 		5C3F662E297841D4003FB01B /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F662D297841D4003FB01B /* Parameter.swift */; };
 		5C3F6631297983F9003FB01B /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F6630297983F9003FB01B /* CharacterRepository.swift */; };
+		9CC0431729CC0B1C00A2C76E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0431629CC0B1C00A2C76E /* BaseResponse.swift */; };
 		9CC652A929CAE08700FBA70D /* HeroList in Resources */ = {isa = PBXBuildFile; fileRef = 9CC652A829CAE08700FBA70D /* HeroList */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		5C3F662B29783C31003FB01B /* CharecterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharecterResponse.swift; sourceTree = "<group>"; };
 		5C3F662D297841D4003FB01B /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		5C3F6630297983F9003FB01B /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		9CC0431629CC0B1C00A2C76E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		9CC652A829CAE08700FBA70D /* HeroList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HeroList; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5C3F662B29783C31003FB01B /* CharecterResponse.swift */,
+				9CC0431629CC0B1C00A2C76E /* BaseResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				5C3F662C29783C31003FB01B /* CharecterResponse.swift in Sources */,
 				5C3F661A2973C4FC003FB01B /* Domain.swift in Sources */,
 				5C3F6631297983F9003FB01B /* CharacterRepository.swift in Sources */,
+				9CC0431729CC0B1C00A2C76E /* BaseResponse.swift in Sources */,
 				5C39CED52973A1C000A19F2C /* ContentView.swift in Sources */,
 				5C3F662929783B91003FB01B /* CharacterRequest.swift in Sources */,
 				5C39CED32973A1C000A19F2C /* HeroBookApp.swift in Sources */,
