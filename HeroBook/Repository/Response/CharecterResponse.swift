@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CharecterResponse: Codable {
+struct CharecterResponse: Codable, Equatable{
     let id: Int?
     let name: String?
     let description: String?
@@ -20,12 +20,12 @@ public struct CharecterResponse: Codable {
     let events: Detail?
     let series: Detail?
 
-    struct Url: Codable {
+    struct Url: Codable, Equatable {
         let type: String?
         let url: String?
     }
 
-    struct Thumbnail: Codable {
+    struct Thumbnail: Codable, Equatable {
         let path: String?
         let extensionString: String?
 
@@ -35,14 +35,14 @@ public struct CharecterResponse: Codable {
         }
     }
 
-    struct Detail: Codable {
+    struct Detail: Codable, Equatable {
         let available: Int?
         let returned: Int?
         let collectionURI: String?
         let items: [Item?]?
     }
 
-    struct Item: Codable {
+    struct Item: Codable, Equatable {
         let resourceURI: String
         let name: String
         let type: String?
