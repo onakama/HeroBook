@@ -8,5 +8,12 @@
 	<string>46a194d6e00c9be0ea4fd4282222fb9a</string>
 	<key>API-SecretKey</key>
 	<string>c78b16b48ac32c5beac175ebbc98ca78c540e3ea</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
 </dict>
 </plist>
