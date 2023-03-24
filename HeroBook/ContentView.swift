@@ -6,23 +6,15 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Button(action: {
-                Task {
-                    print(await CharacterRepository.fetch())
-                }
-            }, label: {
-                VStack {
-                    Image(systemName: "globe")
-                        .imageScale(.large)
-                        .foregroundColor(.accentColor)
-                    Text("Hello, world!")
-                }
-            } )
-            }
+            HeroListView(store: Store(initialState: .init(),
+                                      reducer: HeroListState.reducer,
+                                      environment: .init()))
+        }
         .padding()
     }
 }

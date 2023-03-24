@@ -8,11 +8,6 @@
 import Foundation
 
 enum HeroListAction: Equatable {
-}
+    case searchButtonTapped
 
-extension HeroListAction {
-    static func view(_ localAction: HeroListView.ViewAction) -> Self {
-        switch localAction {
-        }
-    }
 }

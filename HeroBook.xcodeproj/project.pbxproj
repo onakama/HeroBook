@@ -23,7 +23,11 @@
 		5C3F662E297841D4003FB01B /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F662D297841D4003FB01B /* Parameter.swift */; };
 		5C3F6631297983F9003FB01B /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F6630297983F9003FB01B /* CharacterRepository.swift */; };
 		9CC0431729CC0B1C00A2C76E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0431629CC0B1C00A2C76E /* BaseResponse.swift */; };
-		9CC652A929CAE08700FBA70D /* HeroList in Resources */ = {isa = PBXBuildFile; fileRef = 9CC652A829CAE08700FBA70D /* HeroList */; };
+		9CC0432429CC3FFD00A2C76E /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0431C29CC3FFD00A2C76E /* HeroListView.swift */; };
+		9CC0432529CC3FFD00A2C76E /* HeroListEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0431E29CC3FFD00A2C76E /* HeroListEnvironment.swift */; };
+		9CC0432629CC3FFD00A2C76E /* HeroListState+Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0431F29CC3FFD00A2C76E /* HeroListState+Reducer.swift */; };
+		9CC0432729CC3FFD00A2C76E /* HeroListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0432029CC3FFD00A2C76E /* HeroListAction.swift */; };
+		9CC0432829CC3FFD00A2C76E /* HeroListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC0432129CC3FFD00A2C76E /* HeroListState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +49,11 @@
 		5C3F662D297841D4003FB01B /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		5C3F6630297983F9003FB01B /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		9CC0431629CC0B1C00A2C76E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
-		9CC652A829CAE08700FBA70D /* HeroList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HeroList; sourceTree = "<group>"; };
+		9CC0431C29CC3FFD00A2C76E /* HeroListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
+		9CC0431E29CC3FFD00A2C76E /* HeroListEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListEnvironment.swift; sourceTree = "<group>"; };
+		9CC0431F29CC3FFD00A2C76E /* HeroListState+Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroListState+Reducer.swift"; sourceTree = "<group>"; };
+		9CC0432029CC3FFD00A2C76E /* HeroListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListAction.swift; sourceTree = "<group>"; };
+		9CC0432129CC3FFD00A2C76E /* HeroListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,10 +165,38 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		9CC0431829CC3FFD00A2C76E /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				9CC0431929CC3FFD00A2C76E /* View */,
+				9CC0431D29CC3FFD00A2C76E /* Store */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		9CC0431929CC3FFD00A2C76E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CC0431C29CC3FFD00A2C76E /* HeroListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CC0431D29CC3FFD00A2C76E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9CC0431E29CC3FFD00A2C76E /* HeroListEnvironment.swift */,
+				9CC0431F29CC3FFD00A2C76E /* HeroListState+Reducer.swift */,
+				9CC0432029CC3FFD00A2C76E /* HeroListAction.swift */,
+				9CC0432129CC3FFD00A2C76E /* HeroListState.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		9CC652A529CADF7D00FBA70D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9CC652A829CAE08700FBA70D /* HeroList */,
+				9CC0431829CC3FFD00A2C76E /* HeroList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -232,7 +268,6 @@
 			files = (
 				5C39CEDA2973A1C100A19F2C /* Preview Assets.xcassets in Resources */,
 				5C39CED72973A1C100A19F2C /* Assets.xcassets in Resources */,
-				9CC652A929CAE08700FBA70D /* HeroList in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C3F66122973C165003FB01B /* String+Ex.swift in Sources */,
+				9CC0432429CC3FFD00A2C76E /* HeroListView.swift in Sources */,
 				5C3F66242973CE87003FB01B /* BaseParameter.swift in Sources */,
 				5C3F662E297841D4003FB01B /* Parameter.swift in Sources */,
 				5C3F662C29783C31003FB01B /* CharecterResponse.swift in Sources */,
@@ -251,10 +287,14 @@
 				5C3F6631297983F9003FB01B /* CharacterRepository.swift in Sources */,
 				9CC0431729CC0B1C00A2C76E /* BaseResponse.swift in Sources */,
 				5C39CED52973A1C000A19F2C /* ContentView.swift in Sources */,
+				9CC0432529CC3FFD00A2C76E /* HeroListEnvironment.swift in Sources */,
 				5C3F662929783B91003FB01B /* CharacterRequest.swift in Sources */,
+				9CC0432729CC3FFD00A2C76E /* HeroListAction.swift in Sources */,
 				5C39CED32973A1C000A19F2C /* HeroBookApp.swift in Sources */,
 				5C3F661D2973C926003FB01B /* Endpoint.swift in Sources */,
 				5C3F66272973D41E003FB01B /* Request.swift in Sources */,
+				9CC0432829CC3FFD00A2C76E /* HeroListState.swift in Sources */,
+				9CC0432629CC3FFD00A2C76E /* HeroListState+Reducer.swift in Sources */,
 				5C3F66182973C3A2003FB01B /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

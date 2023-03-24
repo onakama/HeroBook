@@ -9,21 +9,25 @@ import SwiftUI
 import ComposableArchitecture
 
 struct HeroListView: View {
-    var store: Store<ViewState, ViewAction>
+    var store: Store<HeroListState, HeroListAction>
 
     var body: some View {
-        WithViewStore(store) { _ in
-            Text("heroName")
+        WithViewStore(store) { viewStore in
+            VStack {
+                Button(String(viewStore.state.characterList.count),
+                   action: {
+                    viewStore.send(.searchButtonTapped)
+                    }
+                )
+            }
         }
     }
 }
 
 struct HeroListView_Previews: PreviewProvider {
     static var previews: some View {
-        HeroListView(store: Store(initialState: .initial,
-                                                    reducer: HeroListState.reducer,
-                                                    environment: .fake)
-                                        .scope(state: \.view,
-                                               action: HeroListAction.view))
+        HeroListView(store: Store(initialState: .init(),
+                                  reducer: HeroListState.reducer,
+                                  environment: .init()))
     }
 }
